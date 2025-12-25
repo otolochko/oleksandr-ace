@@ -34,7 +34,7 @@ const TRANSLATIONS = {
     },
     hero: {
       badge: "Atlassian Certified Expert",
-      titleTop: "Atlassian Cloud Solutions",
+      titleTop: "The Atlassian System of Work",
       titleHighlight: "delivered with outcomes",
       desc: "I design and automate Atlassian Cloud setups - workflows, governance, integrations, and reporting - so teams ship faster, support meets SLAs, and leadership gets real visibility.",
       btnPrimary: "View Services",
@@ -247,7 +247,7 @@ const TRANSLATIONS = {
     },
     hero: {
       badge: "Atlassian Certified Expert",
-      titleTop: "Atlassian Cloud Solutions",
+      titleTop: "Екосистема Atlassian",
       titleHighlight: "з результатом для бізнесу",
       desc: "Проєктую та автоматизую Atlassian Cloud - процеси, governance, інтеграції та звітність - щоб команди працювали швидше, підтримка виконувала SLA, а менеджмент бачив реальну картину.",
       btnPrimary: "Оглянути послуги",
@@ -541,7 +541,7 @@ export default async function Page({
             {t.hero.badge}
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-6">
+          <h1 className="text-5xl md:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
             {t.hero.titleTop}
             <br />
             <span className="text-blue-600">{t.hero.titleHighlight}</span>

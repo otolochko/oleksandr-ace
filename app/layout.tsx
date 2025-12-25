@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Oleksandr - Atlassian Consulting",
-  description: "Jira, Confluence, and Jira Service Management administration, automation, and delivery.",
+  title: "Oleksandr Tolochko - Atlassian Certified Expert",
+  description: "The Atlassian System of Work delivered with outcomes",
 };
 
 export default function RootLayout({
