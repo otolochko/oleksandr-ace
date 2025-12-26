@@ -1,11 +1,3 @@
-import { FileText } from "lucide-react";
-
-interface FooterProps {
-  footer: {
-    footer: string;
-  };
-}
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 

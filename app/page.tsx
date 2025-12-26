@@ -30,14 +30,13 @@ export default async function Page({
         <Hero hero={t.hero} />
         <About about={t.about} />
         <Tech tech={t.tech} />
-        <Areas areas={t.areas} />   
         <Challenges challenges={t.challenges} />
         <Areas areas={t.areas} />
         <Services services={t.services} />
         <Projects projects={t.projects} />
         <ContactSection contact={t.contact} lang={lang} />
       </main>
-      <Footer footer={t.contact} />
+      <Footer />
     </div>
   );
 }
