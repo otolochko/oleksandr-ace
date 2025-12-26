@@ -51,22 +51,10 @@ export default function ContactFormClient({ lang, labels }: { lang: Lang; labels
     setStatus("submitting");
 
     
-    const webhookUrl = process.env.NEXT_PUBLIC_N8N_WEBHOOK_URL;
-    const authHeader = process.env.NEXT_PUBLIC_N8N_AUTH_HEADER;
-
-    if (!webhookUrl || !authHeader) {
-      console.error("n8n webhook URL or auth header is not defined.");
-      setStatus("error");
-      return;
-    }
-
     try {
-      const response = await fetch(webhookUrl, {
+      const response = await fetch("/api/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": authHeader,
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: form.name,
           email: form.email,
