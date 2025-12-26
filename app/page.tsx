@@ -27,7 +27,7 @@ const TRANSLATIONS = {
       about: "About Me",
       challenges: "Solutions",
       expertise: "Expertise",
-      services: "Services", // Додано
+      services: "Services",
       projects: "Projects",
       contact: "Contact",
       cta: "Let's Talk",
@@ -36,7 +36,7 @@ const TRANSLATIONS = {
       badge: "Atlassian Certified Expert",
       titleTop: "The Atlassian System of Work",
       titleHighlight: "delivered with outcomes",
-      desc: "I design and automate Atlassian Cloud setups - workflows, governance, integrations, and reporting - so teams ship faster, support meets SLAs, and leadership gets real visibility.",
+      desc: "I design and automate Atlassian Cloud setups - processes, automation, integrations, and reporting - so teams ship faster, support meets SLAs, and leadership gets real visibility.",
       btnPrimary: "View Services",
       btnSecondary: "Discuss Project",
     },
@@ -103,7 +103,7 @@ const TRANSLATIONS = {
         {
           problem: "License cost waste",
           solution:
-            "I audit usage and access paths, optimize licensing, and clean up old projects to reduce total cost of ownership.",
+            "I audit usage and access paths, optimize licensing, and clean up old projects to reduce total cost of ownership. I also automate ongoing license management.",
         },
       ],
     },
@@ -122,7 +122,7 @@ const TRANSLATIONS = {
         },
         {
           title: "Software Delivery (DevOps)",
-          list: ["Agile at scale", "CI/CD integrations (Bitbucket/GitLab)", "Release and change enablement"],
+          list: ["Agile at scale", "CI/CD integrations (Bitbucket/GitLab/GitHub)", "Release and change enablement"],
           icon: <Code aria-hidden="true" />,
         },
         {
@@ -149,7 +149,7 @@ const TRANSLATIONS = {
     },
     services: {
       title: "Service Packages",
-      desc: "Structured engagement models adapted to your maturity level.",
+      desc: "Personalized collaboration models tailored to your goals.",
       items: [
         {
           title: "Basic Consulting",
@@ -175,48 +175,34 @@ const TRANSLATIONS = {
     },
     projects: {
       title: "Selected Projects",
-      desc: "Anonymized examples of migrations, optimizations, and enterprise-scale implementations.",
+      desc: "Enterprise-level system migration and optimization cases.",
       items: [
         {
           category: "Banking • Security",
           title: "High-Security Audit and Hardening",
-          desc: "Access model review, risk register, and a remediation plan aligned to internal controls.",
-          outcomes: ["Permission model redesign", "Audit-ready documentation set"],
-          tags: ["Security", "Compliance", "Governance"],
+          desc: "Deep technical audit of Atlassian infrastructure for a major bank. Identified vulnerabilities and optimized performance under high load.",
+          outcomes: ["Permission model redesign", "GDPR/ISO compliance readiness"],
+          tags: ["Security", "Compliance", "Performance"],
         },
         {
           category: "Telecom • ITSM",
           title: "L1-L3 Support Transformation",
-          desc: "Unified service desk with refined SLAs, queues, and automations to improve response and resolution.",
+          desc: "Unified service desk for a global provider. Streamlined incident management and automated request fulfillment.",
           outcomes: ["Reduced MTTR by ~40%", "24/7 on-call and escalation design"],
           tags: ["JSM", "SLA", "Automation"],
         },
         {
-          category: "Automotive • R&D",
-          title: "ALM and ASPICE Enablement",
-          desc: "Traceability across requirements, development, and QA to support regulated delivery.",
-          outcomes: ["Requirements-to-test traceability", "Process templates and reporting"],
-          tags: ["ALM", "Traceability", "Xray"],
-        },
-        {
-          category: "eCommerce • Integrations",
-          title: "Warehouse and Logistics Integration",
-          desc: "Connected Jira to operational systems via APIs to improve throughput and reduce manual handoffs.",
-          outcomes: ["API-driven synchronization", "Operational visibility dashboards"],
-          tags: ["REST API", "Integration", "Reporting"],
-        },
-        {
           category: "MSP • Operations",
           title: "Multi-Client Support Model",
-          desc: "Separated customer experiences with controlled data boundaries and standardized service intake.",
-          outcomes: ["Client portals and segregation", "Automated reporting for billing support"],
-          tags: ["Multi-tenancy", "Governance", "Reporting"],
+          desc: "Architecture for an IT service provider to support multiple external clients within a single Atlassian instance.",
+          outcomes: ["Data segregation between clients", "Automated billing reports"],
+          tags: ["Multi-tenancy", "Governance", "Tempo"],
         },
         {
           category: "Enterprise • Migration",
-          title: "Large-Scale Jira Consolidation",
-          desc: "Consolidated 100+ Jira instances into a standardized target architecture with consistent workflows.",
-          outcomes: ["Global workflow standardization", "Migration runbooks and cutover support"],
+          title: "Large-scale migration and unification",
+          desc: "Merging 20+ disparate Jira Cloud/DC instances into a single target instance and implementing a unified methodology.",
+          outcomes: ["Global workflow standardization", "License cost optimization"],
           tags: ["Migration", "Data Center", "Governance"],
         },
       ],
@@ -229,8 +215,6 @@ const TRANSLATIONS = {
         email: "Email Address",
         message: "Message",
         submit: "Send Request",
-        success: "Thanks. Your message is prepared (demo mode - not sent).",
-        error: "Please check the fields and try again.",
       },
       footer: "Based on professional expertise and hands-on delivery experience.",
     },
@@ -240,7 +224,7 @@ const TRANSLATIONS = {
       about: "Про мене",
       challenges: "Рішення",
       expertise: "Експертиза",
-      services: "Послуги", // Додано
+      services: "Послуги",
       projects: "Проєкти",
       contact: "Контакти",
       cta: "Зв'язатися",
@@ -248,15 +232,15 @@ const TRANSLATIONS = {
     hero: {
       badge: "Atlassian Certified Expert",
       titleTop: "Екосистема Atlassian",
-      titleHighlight: "з результатом для бізнесу",
-      desc: "Проєктую та автоматизую Atlassian Cloud - процеси, governance, інтеграції та звітність - щоб команди працювали швидше, підтримка виконувала SLA, а менеджмент бачив реальну картину.",
+      titleHighlight: "з результатами для бізнесу",
+      desc: "Проєктую та автоматизую Atlassian Cloud - процеси, управління (governance), інтеграції та звітність - щоб команди працювали швидше, підтримка виконувала SLA, а менеджмент бачив реальну картину.",
       btnPrimary: "Оглянути послуги",
       btnSecondary: "Обговорити проєкт",
     },
     about: {
       title: "Чим я займаюся",
-      p1: "Повний цикл Atlassian delivery: адміністрування організації, схеми доступу, налаштування проєктів, портали та SLA в Jira Service Management, база знань у Confluence, Assets (CMDB) та автоматизації.",
-      p2: "Фокус на вимірюваному ефекті: менше ручної роботи, чітка відповідальність, чисті дані, оптимізація ліцензій та краща взаємодія між командами.",
+      p1: "Повний цикл впровадження Atlassian: адміністрування організації, схеми доступу, налаштування проєктів, портали та SLA в Jira Service Management, база знань у Confluence, Assets (CMDB) та автоматизації.",
+      p2: "Фокус на вимірюваному ефекті: менше ручної роботи, чітка відповідальність, чисті дані, оптимізація витрат на ліцензії та краща взаємодія між командами.",
       stat1: "Років досвіду",
       stat2: "Certified Expert",
     },
@@ -286,164 +270,148 @@ const TRANSLATIONS = {
     },
     challenges: {
       title: "Проблеми, які я вирішую",
-      desc: "Типові вузькі місця та способи їх усунення в екосистемі Atlassian.",
+      desc: "Типові вузькі місця та способи їх усунення за допомогою продуктів Atlassian.",
       items: [
         {
           problem: "Хаос у процесах та відсутність стандартів",
           solution:
-            "Впроваджую практичний governance, уніфікую workflows і закріплюю ownership та правила роботи команд.",
+            "Впроваджую практичне управління та стандарти, уніфікую робочі процеси і закріплюю відповідальних та правила роботи команд.",
         },
         {
           problem: "Ізольовані інструменти та дані",
           solution:
-            "Інтегрую Jira з CI/CD, CRM та комунікаційними інструментами через REST API та webhooks.",
+            "Інтегрую Jira з CI/CD, CRM та комунікаційними інструментами через REST API та вебхуки.",
         },
         {
           problem: "Немає прозорості для менеджменту",
           solution:
-            "Будую звітність і dashboards, які показують реальний стан delivery, а не просто кількість задач.",
+            "Будую звітність і дашборди, які показують реальний стан виконання, а не просто кількість задач.",
         },
         {
           problem: "Повільна підтримка та збої в SLA",
           solution:
-            "Оптимізую черги, SLA, автоматизації та портали самообслуговування для зменшення MTTR та підвищення deflection.",
+            "Оптимізую черги, SLA, автоматизації та портали самообслуговування для зменшення MTTR та зростання самообслуговування (менше звернень до агентів).",
         },
         {
-          problem: "Прогалини в безпеці та compliance",
+          problem: "Прогалини в безпеці та відповідності вимогам",
           solution:
-            "Підсилюю permission model, проводжу access review і документую зміни під вимоги GDPR/ISO-подібних стандартів.",
+            "Підсилюю модель прав доступу, проводжу перегляд доступів і документую зміни під вимоги GDPR/ISO-подібних стандартів.",
         },
         {
           problem: "Зайві витрати на ліцензії",
           solution:
-            "Аналізую використання та доступ, оптимізую ліцензії і прибираю технічний борг у проєктах.",
+            "Аналізую використання та доступ, оптимізую ліцензії, автоматизую процес ефективного управління ліцензіями.",
         },
       ],
     },
     areas: {
       title: "Сфери експертизи",
-      desc: "Адаптую Atlassian інструменти під процеси різних департаментів.",
+      desc: "Адаптую інструменти Atlassian під бізнес-процеси різних департаментів.",
       items: [
         {
-          title: "IT & Operations (ITSM)",
+          title: "IT та Оперейшн (ITSM)",
           list: [
-            "Incident/Change/Request management",
-            "Asset Management (Assets/Insight)",
-            "JSM Operations (Opsgenie) on-call налаштування",
+            "Управління інцидентами/змінами/запитами",
+            "Управління активами (Assets/Insight)",
+            "JSM Operations (Opsgenie): налаштування on-call чергувань",
           ],
           icon: <Server aria-hidden="true" />,
         },
         {
-          title: "Software Delivery (DevOps)",
-          list: ["Agile у масштабі", "CI/CD інтеграції (Bitbucket/GitLab)", "Release та change enablement"],
+          title: "Розробка та DevOps",
+          list: ["Agile у масштабі", "Інтеграції CI/CD (Bitbucket/GitLab/GitHub)", "Релізи та керування змінами (change enablement)"],
           icon: <Code aria-hidden="true" />,
         },
         {
-          title: "Project Management",
-          list: ["Планування ресурсів", "Advanced Roadmaps (Plans)", "Гібридні delivery моделі"],
+          title: "Управління проєктами",
+          list: ["Планування ресурсів", "Advanced Roadmaps (Plans)", "Гібридні моделі виконання"],
           icon: <Briefcase aria-hidden="true" />,
         },
         {
-          title: "HR & People Ops",
-          list: ["Автоматизація onboarding/offboarding", "Employee service desk", "Knowledge base enablement"],
+          title: "HR та People Ops",
+          list: ["Автоматизація онбордингу/офбордингу", "Сервіс-деск для співробітників", "Розвиток бази знань"],
           icon: <Users aria-hidden="true" />,
         },
         {
-          title: "Legal & Finance",
-          list: ["Approval flows та контролі", "Документообіг у Confluence", "Procurement та audit trail"],
+          title: "Юридичний та фінансовий департамент",
+          list: ["Погодження та контроль", "Процеси документації в Confluence", "Закупівлі та аудиторські сліди (audit trail)"],
           icon: <Lock aria-hidden="true" />,
         },
         {
-          title: "Marketing & Sales",
-          list: ["Трекінг кампаній", "CRM інтеграції", "Intake та triage запитів"],
+          title: "Маркетинг і продажі",
+          list: ["Відстеження виконання кампаній", "Інтеграції з CRM", "Прийом і тріаж запитів між командами"],
           icon: <Layout aria-hidden="true" />,
         },
       ],
     },
     services: {
       title: "Пакети послуг",
-      desc: "Структуровані моделі співпраці під ваш рівень зрілості.",
+      desc: "Персоналізовані моделі співпраці відповідно до ваших цілей.",
       items: [
         {
-          title: "Basic Consulting",
+          title: "Базовий консалтинг",
           desc: "Практичні покращення та безпечні зміни конфігурації для стабілізації середовища.",
-          features: ["Health check інстансу", "Керування користувачами та ліцензіями", "Базові налаштування", "Адмін воркшопи"],
+          features: ["Перевірка стану інстансу", "Керування користувачами та ліцензіями", "Базові налаштування", "Воркшопи для адміністраторів"],
         },
         {
-          title: "Atlassian Tech Assessment",
+          title: "Технічний аудит Atlassian",
           desc: "Глибокий технічний аналіз вузьких місць і ризиків.",
           features: ["Огляд продуктивності", "Перевірка безпеки", "План міграції", "Архітектурний рев'ю"],
         },
         {
           title: "Proof of Value (PoV)",
           desc: "Пілот, який показує цінність перед масштабуванням.",
-          features: ["Пілот delivery", "Цільова кастомізація", "Тестування гіпотез", "Підсумок value/ROI"],
+          features: ["Пілот delivery", "Цільова кастомізація", "Тестування гіпотез", "Підсумок цінності та ROI"],
         },
         {
-          title: "R&D & Custom Dev",
+          title: "R&D та індивідуальна розробка",
           desc: "Автоматизації та інтеграції під нестандартні вимоги.",
-          features: ["Forge розширення", "Дизайн автоматизацій", "Зовнішні інтеграції", "Підсилення платформи"],
+          features: ["Forge-додатки", "Дизайн автоматизацій", "Зовнішні інтеграції", "Підсилення платформи"],
         },
       ],
     },
     projects: {
       title: "Вибрані проєкти",
-      desc: "Анонімізовані приклади міграцій, оптимізацій та впроваджень корпоративного рівня.",
+      desc: "Кейси з міграції та оптимізації систем корпоративного рівня.",
       items: [
         {
           category: "Banking • Security",
-          title: "Аудит безпеки та hardening",
-          desc: "Огляд доступів, реєстр ризиків і план ремедіації під внутрішні контролі.",
-          outcomes: ["Редизайн permission model", "Пакет документації під аудит"],
-          tags: ["Security", "Compliance", "Governance"],
+          title: "Аудит та зміцнення безпеки",
+          desc: "Глибокий технічний аудит інфраструктури Atlassian для великого банку. Виявлення вразливостей та оптимізація продуктивності.",
+          outcomes: ["Редизайн моделі прав доступу", "Відповідність вимогам GDPR/ISO"],
+          tags: ["Security", "Compliance", "Performance"],
         },
         {
           category: "Telecom • ITSM",
           title: "Трансформація L1-L3 підтримки",
-          desc: "Єдиний service desk із SLA, чергами та автоматизаціями для кращої реакції та resolution.",
-          outcomes: ["Зменшення MTTR приблизно на 40%", "24/7 on-call та ескалації"],
+          desc: "Побудова єдиного Service Desk для глобального провайдера. Оптимізація інцидентів та автоматизація запитів.",
+          outcomes: ["Зменшення MTTR приблизно на 40%", "Налаштування чергувань 24/7"],
           tags: ["JSM", "SLA", "Automation"],
         },
         {
-          category: "Automotive • R&D",
-          title: "ALM та ASPICE enablement",
-          desc: "Трасуватість між вимогами, розробкою та QA для регульованого delivery.",
-          outcomes: ["Traceability requirements-to-tests", "Шаблони процесів та звітність"],
-          tags: ["ALM", "Traceability", "Xray"],
-        },
-        {
-          category: "eCommerce • Integrations",
-          title: "Інтеграція склад-логістика",
-          desc: "Підключення Jira до операційних систем через API для зменшення ручних передач задач.",
-          outcomes: ["API синхронізація", "Dashboards для операцій"],
-          tags: ["REST API", "Integration", "Reporting"],
-        },
-        {
           category: "MSP • Operations",
-          title: "Multi-client модель підтримки",
-          desc: "Розділення клієнтських потоків із контрольованими межами доступу та стандартизованим intake.",
-          outcomes: ["Портали та сегрегація", "Автоматизована звітність під білінг"],
-          tags: ["Multi-tenancy", "Governance", "Reporting"],
+          title: "Модель підтримки Multi-Client",
+          desc: "Архітектура для IT-провайдера, що дозволяє обслуговувати багатьох зовнішніх клієнтів в одному інстансі.",
+          outcomes: ["Сегрегація даних між клієнтами", "Автоматичні звіти для білінгу"],
+          tags: ["Multi-tenancy", "Governance", "Tempo"],
         },
         {
           category: "Enterprise • Migration",
-          title: "Масштабна консолідація Jira",
-          desc: "Консолідація 100+ інстансів із уніфікацією workflows та підтримкою cutover.",
-          outcomes: ["Стандартизація workflows", "Runbooks та підтримка міграції"],
+          title: "Масштабна міграція та уніфікація",
+          desc: "Злиття 20+ розрізнених Jira Cloud/DC в один таргет-інстанс та впровадження єдиної методології.",
+          outcomes: ["Глобальна уніфікація воркфлоу", "Оптимізація витрат на ліцензії"],
           tags: ["Migration", "Data Center", "Governance"],
         },
       ],
     },
     contact: {
       title: "Давайте обговоримо ваш проєкт",
-      desc: "Заповніть форму або напишіть напряму. Беру в роботу аудит, міграції, автоматизації та інтеграції.",
+      desc: "Заповніть форму або напишіть напряму. Беру в роботу аудити, міграції, автоматизації та інтеграції.",
       form: {
         name: "Ваше ім'я",
         email: "Email",
         message: "Повідомлення",
         submit: "Відправити запит",
-        success: "Дякую. Повідомлення підготовлено (demo режим - не відправляється).",
-        error: "Перевірте поля та спробуйте ще раз.",
       },
       footer: "На основі професійної експертизи та практичного досвіду впроваджень.",
     },
@@ -504,7 +472,7 @@ export default async function Page({
                 {t.nav.expertise}
               </a>
               <a href="#services" className="text-slate-600 hover:text-blue-600 transition">
-                {t.nav.services} {/* Додано */}
+                {t.nav.services}
               </a>
               <a href="#projects" className="text-slate-600 hover:text-blue-600 transition">
                 {t.nav.projects}
@@ -575,7 +543,7 @@ export default async function Page({
 
           <div className="grid grid-cols-2 gap-4">
             <div className="p-6 bg-slate-50 rounded-xl border border-slate-100 text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">7+</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">10+</div>
               <div className="text-sm text-slate-500 font-medium uppercase">{t.about.stat1}</div>
             </div>
             <div className="p-6 bg-slate-50 rounded-xl border border-slate-100 text-center">
@@ -727,7 +695,9 @@ export default async function Page({
                 className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg border border-slate-200 transition-all flex flex-col"
               >
                 <div className="p-8 flex-1">
-                  <div className="text-xs font-bold tracking-wider text-blue-600 uppercase mb-3">{project.category}</div>
+                  <div className="text-xs font-bold tracking-wider text-blue-600 uppercase mb-3">
+                    {project.category}
+                  </div>
                   <h3 className="text-xl font-bold text-slate-900 mb-3">{project.title}</h3>
                   <p className="text-slate-600 mb-5 leading-relaxed">{project.desc}</p>
 
