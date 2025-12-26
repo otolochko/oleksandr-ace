@@ -11,6 +11,8 @@ interface ContactSectionProps {
       email: string;
       message: string;
       submit: string;
+      success: string;
+      error: string;
     };
   };
   lang: Lang;
