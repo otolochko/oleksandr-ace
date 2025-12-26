@@ -37,7 +37,7 @@ export default function ContactFormClient({ lang, labels }: { lang: Lang; labels
     emailOk &&
     form.message.trim().length >= 10;
 
-  function onSubmit(e: React.FormEvent) {
+  async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
 
     // honeypot (bots)
@@ -50,11 +50,33 @@ export default function ContactFormClient({ lang, labels }: { lang: Lang; labels
 
     setStatus("submitting");
 
-    // Demo behavior (no backend): show success and reset
-    window.setTimeout(() => {
-      setStatus("success");
-      setForm({ name: "", email: "", message: "", company: "" });
-    }, 400);
+    // TODO: Replace with your n8n webhook URL
+    const N8N_WEBHOOK_URL = "https://n8n.talon.pp.ua/webhook/1340b04e-84dd-46f4-b877-b9f879681129";
+
+    try {
+      const response = await fetch(N8N_WEBHOOK_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Basic c2l0ZV9hdGxhc3NpYW46NzEyMDIwOjI1ZWNiNTBiLTc2NzgtNGEzNi1hZmU0LTcwMjRiMTk2MGJjYg==",
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          message: form.message,
+        }),
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        setForm({ name: "", email: "", message: "", company: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setStatus("error");
+    }
   }
 
   return (
