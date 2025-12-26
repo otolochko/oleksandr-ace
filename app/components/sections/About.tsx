@@ -20,7 +20,7 @@ const About = ({ about }: AboutProps) => {
 
         <div className="grid grid-cols-2 gap-4">
           <div className="p-6 bg-slate-50 rounded-xl border border-slate-100 text-center">
-            <div className="text-4xl font-bold text-blue-600 mb-2">10+</div>
+            <div className="text-4xl font-bold text-blue-600 mb-2">8+</div>
             <div className="text-sm text-slate-500 font-medium uppercase">{about.stat1}</div>
           </div>
           <div className="p-6 bg-slate-50 rounded-xl border border-slate-100 text-center">
