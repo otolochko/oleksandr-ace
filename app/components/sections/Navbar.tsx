@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Globe } from "lucide-react";
-import { Lang } from "../i18n";
+type Lang = "en" | "uk";
 
 interface NavbarProps {
   nav: {
