@@ -30,6 +30,7 @@ export default async function Page({
         <Hero hero={t.hero} />
         <About about={t.about} />
         <Tech tech={t.tech} />
+        <Areas areas={t.areas} />   
         <Challenges challenges={t.challenges} />
         <Areas areas={t.areas} />
         <Services services={t.services} />

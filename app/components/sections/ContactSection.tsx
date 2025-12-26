@@ -20,7 +20,7 @@ interface ContactSectionProps {
 
 const ContactSection = ({ contact, lang }: ContactSectionProps) => {
   return (
-    <section id="contact" className="py-24 px-4 bg-blue-50">
+    <section id="contact" className="py-24 px-4 bg-blue-10">
       <div className="max-w-5xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row">
         <div className="bg-blue-600 p-10 md:w-2/5 text-white flex flex-col justify-between">
           <div>
@@ -52,10 +52,6 @@ const ContactSection = ({ contact, lang }: ContactSectionProps) => {
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="mt-12">
-            <p className="text-sm text-blue-200">© 2024 Oleksandr Tolochko</p>
           </div>
         </div>
 

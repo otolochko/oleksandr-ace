@@ -14,7 +14,7 @@ interface ProjectsProps {
 
 const Projects = ({ projects }: ProjectsProps) => {
   return (
-    <section id="projects" className="py-20 bg-slate-50 border-t border-slate-200">
+    <section id="projects" className="py-20 bg-blue-50 border-t border-slate-200 ">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-slate-900 mb-4">{projects.title}</h2>
