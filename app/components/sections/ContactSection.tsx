@@ -1,4 +1,4 @@
-import { Mail, Linkedin } from "lucide-react";
+import { Mail, Linkedin, CircleUser } from "lucide-react";
 import ContactFormClient from "../ContactFormClient";
 import { Lang } from "../../i18n";
 
@@ -30,12 +30,12 @@ const ContactSection = ({ contact, lang }: ContactSectionProps) => {
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <div className="p-3 bg-blue-500/50 rounded-lg">
-                  <Mail className="w-6 h-6" aria-hidden="true" />
+                  <CircleUser className="w-6 h-6" aria-hidden="true" />
                 </div>
                 <div>
-                  <p className="text-xs text-blue-200 uppercase font-bold">Email</p>
-                  <a className="font-medium hover:text-blue-200" href="mailto:contact@oleksandr.dev">
-                    contact@oleksandr.dev
+                  <p className="text-xs text-blue-200 uppercase font-bold">Community</p>
+                  <a className="font-medium hover:text-blue-200" href="https://community.atlassian.com/user/profile/af784eda-dcd2-4fba-8282-d1cd8548b328" target="_blank">
+                    Atlassian Community Profile
                   </a>
                 </div>
               </div>
@@ -46,7 +46,7 @@ const ContactSection = ({ contact, lang }: ContactSectionProps) => {
                 </div>
                 <div>
                   <p className="text-xs text-blue-200 uppercase font-bold">Social</p>
-                  <a href="#" className="font-medium hover:text-blue-200" target="_blank" rel="noopener noreferrer">
+                  <a className="font-medium hover:text-blue-200" href="https://www.linkedin.com/in/oleksandrtolochko/" target="_blank">
                     LinkedIn Profile
                   </a>
                 </div>
