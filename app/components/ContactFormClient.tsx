@@ -50,15 +50,22 @@ export default function ContactFormClient({ lang, labels }: { lang: Lang; labels
 
     setStatus("submitting");
 
-    // TODO: Replace with your n8n webhook URL
-    const N8N_WEBHOOK_URL = "https://n8n.talon.pp.ua/webhook/1340b04e-84dd-46f4-b877-b9f879681129";
+    
+    const webhookUrl = process.env.NEXT_PUBLIC_N8N_WEBHOOK_URL;
+    const authHeader = process.env.NEXT_PUBLIC_N8N_AUTH_HEADER;
+
+    if (!webhookUrl || !authHeader) {
+      console.error("n8n webhook URL or auth header is not defined.");
+      setStatus("error");
+      return;
+    }
 
     try {
-      const response = await fetch(N8N_WEBHOOK_URL, {
+      const response = await fetch(webhookUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": "Basic c2l0ZV9hdGxhc3NpYW46NzEyMDIwOjI1ZWNiNTBiLTc2NzgtNGEzNi1hZmU0LTcwMjRiMTk2MGJjYg==",
+          "Authorization": authHeader,
         },
         body: JSON.stringify({
           name: form.name,
